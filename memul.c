@@ -10,7 +10,7 @@ memul_t* memul_create() {
 
     // init pages
     for (int i=0 ; i<LOG_MEMORY_LENGTH / PAGE_LENGTH ; ++i) {
-        m->pages[i] = -1;
+        m->pages[i] = 0;
     }
 
     // init logical memory state
